@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
     <title>Mattis Zheng</title>
   </head>
   <body>
@@ -15,21 +14,13 @@
       <h1>
         <a href="/">Mattis Zheng</a>
       </h1>
-      <nav>
-        <ul>
-          <li><a href="#top">Home</a></li>
-          |
-          <li><a href="#about">About</a></li>
-          |
-          <li><a href="#work">Work</a></li>
-        </ul>
-      </nav>
-      <div class="external_link">
+      <nav><a href="#top">Home</a>|<a href="#about">About</a>|<a href="#work">Work</a></nav>
+      <nav class="external_link">
         <a href="https://www.linkedin.com/in/mattiszheng/" target="_blank" rel="noreferrer noopener"><img src="" alt="LinkedIn" /></a>
         <a href="https://github.com/MattisZheng" target="_blank" rel="noreferrer noopener"
-          ><img src="./assets/icons/github_light.svg" alt="GitHub" width="100px"
+          ><img src="/icons/github_mark_light_small.svg" alt="GitHub" width="100px"
         /></a>
-      </div>
+      </nav>
     </header>
     <main>
       <section data-aos="fade-up">
@@ -124,8 +115,9 @@
     <footer>
       <p>© 2021 Mattis Zheng</p>
     </footer>
+    <script src="./index.ts" type="module"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
-  <script>
-    AOS.init();
-  </script>
 </html>
