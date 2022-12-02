@@ -34,7 +34,7 @@ button {
   width: 50px;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -101,11 +101,18 @@ main {
   }
 }
 
-.flex {
+.preview {
+  margin: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  border-radius: 30px;
+  padding: 30px 5px;
+
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 32px;
+  .preview-img {
+    width: 100%;
+  }
 }
 
 .hidden {
