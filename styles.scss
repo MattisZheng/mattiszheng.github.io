@@ -51,13 +51,11 @@ body {
 }
 header {
   position: sticky;
-  overflow: visible;
   top: 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
   z-index: 1;
   padding: 0 10px;
   backdrop-filter: blur(5px);
@@ -120,8 +118,21 @@ main {
 }
 
 footer {
-  grid-area: footer;
   text-align: center;
+  padding: 10px;
+  nav {
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    ul {
+      display: flex;
+      li {
+        margin: 0 10px;
+      }
+    }
+  }
 }
 
 // small (mobile)
@@ -129,29 +140,46 @@ footer {
   header {
     flex-direction: column;
     align-items: center;
+    h1 {
+      display: none;
+    }
     nav {
-      flex-direction: column;
-      align-items: center;
+      ul {
+        flex-direction: column;
+        li {
+          margin: 10px 0;
+        }
+      }
+    }
+    #external-links {
+      display: none;
     }
   }
-
   main {
     margin: 0;
     padding: 0;
   }
   section {
     margin: 10vh 0;
-    height: 100vh;
+  }
+  .preview {
+    flex-direction: column;
+    align-items: center;
   }
 }
 // medium (tablet)
 @media (max-width: 768px) {
+  header {
+    align-items: center;
+    h1 {
+      display: none;
+    }
+  }
   main {
     margin: 0;
     padding: 0;
   }
   section {
     margin: 10vh 0;
-    height: 100vh;
   }
 }

@@ -49,13 +49,11 @@ body {
 header {
   position: -webkit-sticky;
   position: sticky;
-  overflow: visible;
   top: 0;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
   z-index: 1;
   padding: 0 10px;
   -webkit-backdrop-filter: blur(5px);
@@ -119,8 +117,21 @@ main .about {
 }
 
 footer {
-  grid-area: footer;
   text-align: center;
+  padding: 10px;
+}
+footer nav {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+footer nav ul {
+  display: flex;
+}
+footer nav ul li {
+  margin: 0 10px;
 }
 
 @media (max-width: 576px) {
@@ -128,26 +139,42 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  header nav {
+  header h1 {
+    display: none;
+  }
+  header nav ul {
+    flex-direction: column;
+  }
+  header nav ul li {
+    margin: 10px 0;
+  }
+  header #external-links {
+    display: none;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    margin: 10vh 0;
+  }
+  .preview {
     flex-direction: column;
     align-items: center;
   }
-  main {
-    margin: 0;
-    padding: 0;
-  }
-  section {
-    margin: 10vh 0;
-    height: 100vh;
-  }
 }
 @media (max-width: 768px) {
+  header {
+    align-items: center;
+  }
+  header h1 {
+    display: none;
+  }
   main {
     margin: 0;
     padding: 0;
   }
   section {
     margin: 10vh 0;
-    height: 100vh;
   }
 }/*# sourceMappingURL=styles.css.map */
