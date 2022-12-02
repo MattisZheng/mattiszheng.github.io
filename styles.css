@@ -103,4 +103,33 @@ main .about {
 footer {
   grid-area: footer;
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    margin: 10vh 0;
+    height: 100vh;
+  }
+}
+@media (max-width: 768px) {
+  main {
+    margin: 0;
+    padding: 0;
+  }
+  section {
+    margin: 10vh 0;
+    height: 100vh;
+  }
 }/*# sourceMappingURL=styles.css.map */
