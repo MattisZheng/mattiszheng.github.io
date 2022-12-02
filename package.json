@@ -12,5 +12,9 @@
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   },
-  "homepage": "https://mattiszheng.github.io"
+  "homepage": "https://mattiszheng.github.io",
+  "dependencies": {
+    "aos": "^2.3.4",
+    "normalize.css": "^8.0.1"
+  }
 }
