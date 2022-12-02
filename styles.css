@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,700&display=swap");
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  filter: drop-shadow(0 0 0.75rem orange);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: white;
+  font-family: "Montserrat Alternates", sans-serif;
+  font-size: calc(1rem + 0.5vw);
+  background-color: black;
+  background: linear-gradient(180deg, black, rgba(0, 0, 0, 0) 70%), linear-gradient(127deg, blue, rgba(0, 0, 0, 0) 70%), linear-gradient(0deg, rgb(170, 88, 102), rgba(0, 0, 0, 0) 70%);
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-areas: "header header header" "left main right" "footer footer footer";
+}
+body header {
+  grid-area: header;
+  position: -webkit-sticky;
+  position: sticky;
+  overflow: visible;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-size: 150%;
+  z-index: 1;
+  padding: 0px 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+}
+body header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+body header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+body header nav ul li {
+  list-style: none;
+  padding: 0 1rem;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+body header .external_link {
+  display: flex;
+  align-items: center;
+}
+body header .external_link .link_icon {
+  width: 32px;
+  padding: 0 5px;
+}
+body header .link_icon:hover {
+  filter: drop-shadow(0 0 0.5rem #fff);
+}
+body header .blue:hover {
+  filter: drop-shadow(0 0 0.5rem #00f);
+}
+body .left {
+  grid-area: left;
+}
+body .right {
+  grid-area: right;
+}
+body main {
+  grid-area: main;
+  justify-content: center;
+  padding: 0 20%;
+}
+body main section {
+  min-height: 50vh;
+  z-index: 0;
+  margin: 20vh 0;
+  padding: 10vh 0;
+}
+body main section article {
+  line-height: 2;
+}
+body main section article span {
+  font-style: italic;
+  font-weight: 700;
+  background: linear-gradient(135deg, orange, red);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+body main .about {
+  display: flex;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 32px;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
+}/*# sourceMappingURL=styles.css.map */

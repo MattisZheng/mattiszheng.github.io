@@ -2,12 +2,130 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+    <title>Mattis Zheng</title>
   </head>
   <body>
+    <header>
+      <h1>
+        <a href="/">Mattis Zheng</a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#top">Home</a></li>
+          |
+          <li><a href="#about">About</a></li>
+          |
+          <li><a href="#work">Work</a></li>
+        </ul>
+      </nav>
+      <div class="external_link">
+        <a href="https://www.linkedin.com/in/mattiszheng/" target="_blank" rel="noreferrer noopener"><img src="" alt="LinkedIn" /></a>
+        <a href="https://github.com/MattisZheng" target="_blank" rel="noreferrer noopener"
+          ><img src="./assets/icons/github_light.svg" alt="GitHub" width="100px"
+        /></a>
+      </div>
+    </header>
+    <aside class="left">left</aside>
+    <main>
+      <section data-aos="fade-up">
+        <article>
+          <p>I am a Front end Developer based in Taipei.</p>
+          <p>Currently looking for front end position.</p>
+          <p>
+            You can check my work on the website or through my
+            <a href="https://github.com/MattisZheng" target="_blank"><span class="white">GitHub</span> </a>
+            page.
+          </p>
+          <p>
+            Contact me through <a href="https://www.linkedin.com/in/mattiszheng/" target="_blank"><span class="blue">LinkedIn</span></a> or
+            <a href="https://www.cakeresume.com/me/mattiszheng" target="_blank"><span class="green">CakeResume.</span> </a>
+          </p>
+        </article>
+      </section>
+      <section id="about">
+        <h2 data-aos="fade-left">About</h2>
+        <article data-aos="fade-left">
+          <p>
+            Most of my projects are written with
+            <span>React</span> in <span>TypeScript</span>, but I can also pick up <span>Astro</span> <span>ssg ssr concepts</span> other front end
+            framework very quickly. <span>Git.</span> I can implementing <span>unit testing</span> and <span>e2e testing</span> with testing tools
+            like <span>Jest, Testing Libraries, and Cypress</span>. css solutions from styled components, css-in-js to implementing ui library or css
+            framework such as <span>TailWind</span> or vite and webpack and other developing tools.
+          </p>
+          <p>
+            <img src="/icons/astro_dark.svg" alt="" width="100px" />
+            <img src="/icons/react.svg" alt="" width="100px" />
+            <img src="/icons/typescript.svg" alt="" width="100px" />
+            <img src="/icons/tailwindcss.svg" alt="" width="100px" />
+            <img src="/icons/jest.svg" alt="" width="100px" />
+            <img src="/icons/cypress.svg" alt="" width="100px" />
+            <img src="/icons/vite.svg" alt="" width="100px" />
+            <img src="/icons/webpack.svg" alt="" width="100px" />
+            <img src="/icons/git.svg" alt="" srcset="" width="100px" />
+            <img src="/icons/Storybook.svg" alt="" srcset="" width="100px" />
+          </p>
+          <button><a href="/test.txt" download="resume">Download Resume</a></button>
+        </article>
+      </section>
+      <section id="work">
+        <h2 data-aos="fade-left" data-aos-anchor="#work">Work</h2>
+        <ul>
+          <li data-aos="fade-left" data-aos-delay="100" data-aos-anchor="#work">
+            <div
+              title="Sispyhus"
+              imageSrc="test.jpg"
+              slug=""
+              live="https://sisyphus-stone.vercel.app/"
+              source="https://github.com/MattisZheng/task_manager"
+            >
+              test
+            </div>
+          </li>
+          <li data-aos="fade-left" data-aos-delay="300" data-aos-anchor="#work">
+            <div
+              title="E-commerce"
+              imageSrc="test.jpg"
+              slug=""
+              live="https://e-commerce-flax-seven.vercel.app/"
+              source="https://github.com/MattisZheng/e-commerce"
+            >
+              test
+            </div>
+          </li>
+          <li data-aos="fade-left" data-aos-delay="600" data-aos-anchor="#work">
+            <div
+              title="Dashboard"
+              imageSrc="test.jpg"
+              slug=""
+              live="https://dashboard-coral-nu.vercel.app/"
+              source="https://github.com/MattisZheng/dashboard"
+            >
+              test
+            </div>
+          </li>
+        </ul>
+        <div class="glass">
+          <h1>{title}</h1>
+          <img src="{imageSrc}" alt="{}" />
+          <div>{slug}</div>
+          <div>
+            <a href="{live}" target="_blank">Live</a>
+            <a href="{source}" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </section>
+      <section id="contact">contact</section>
+    </main>
+    <aside class="right">right</aside>
+    <footer>
+      <p>Mattis Zheng</p>
+    </footer>
     <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
