@@ -18,7 +18,22 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  border: none;
+  padding: 10px;
+  background-color: green;
+}
+
+.icon{
+  img{
+    width: 50px;
+  }
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
   font-size: calc(1rem + 0.5vw);
@@ -46,23 +61,6 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-  }
-
-  .external_link {
-    display: flex;
-    align-items: center;
-
-    .link_icon {
-      width: 32px;
-      padding: 0 5px;
-    }
-  }
-
-  .link_icon:hover {
-    filter: drop-shadow(0 0 0.5rem #fff);
-  }
-  .blue:hover {
-    filter: drop-shadow(0 0 0.5rem #00f);
   }
 }
 
@@ -109,7 +107,7 @@ footer {
 
 // small (mobile)
 @media (max-width: 576px) {
-  header{
+  header {
     flex-direction: column;
     align-items: center;
     nav {
@@ -117,7 +115,7 @@ footer {
       align-items: center;
     }
   }
-  
+
   main {
     margin: 0;
     padding: 0;
@@ -129,8 +127,6 @@ footer {
 }
 // medium (tablet)
 @media (max-width: 768px) {
-  
-  
   main {
     margin: 0;
     padding: 0;

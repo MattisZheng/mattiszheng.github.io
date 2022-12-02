@@ -17,7 +17,20 @@ html {
   scroll-behavior: smooth;
 }
 
+button {
+  border: none;
+  padding: 10px;
+  background-color: green;
+}
+
+.icon img {
+  width: 50px;
+}
+
 body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: calc(1rem + 0.5vw);
@@ -48,20 +61,6 @@ header nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
-header .external_link {
-  display: flex;
-  align-items: center;
-}
-header .external_link .link_icon {
-  width: 32px;
-  padding: 0 5px;
-}
-header .link_icon:hover {
-  filter: drop-shadow(0 0 0.5rem #fff);
-}
-header .blue:hover {
-  filter: drop-shadow(0 0 0.5rem #00f);
 }
 
 main {
