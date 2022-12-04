@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ul {
   list-style-type: none;
-  padding: 0;
 }
 
 a {
@@ -34,12 +39,6 @@ button {
   width: 50px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   color: white;
   font-family: 'Montserrat Alternates', sans-serif;
@@ -57,7 +56,7 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 0 10px;
+  padding: 0 1rem;
   backdrop-filter: blur(5px);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
   nav {
@@ -140,14 +139,11 @@ footer {
   header {
     flex-direction: column;
     align-items: center;
-    h1 {
-      display: none;
-    }
     nav {
       ul {
         flex-direction: column;
         li {
-          margin: 10px 0;
+          margin: 1em 0;
         }
       }
     }
