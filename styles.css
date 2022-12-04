@@ -1,7 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 ul {
   list-style-type: none;
-  padding: 0;
 }
 
 a {
@@ -31,18 +36,12 @@ button {
   width: 50px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   color: white;
   font-family: "Montserrat Alternates", sans-serif;
   font-size: calc(1rem + 0.5vw);
   background-color: black;
-  background: linear-gradient(180deg, black, rgba(0, 0, 0, 0) 70%), linear-gradient(127deg, blue, rgba(0, 0, 0, 0) 70%), linear-gradient(0deg, rgb(170, 88, 102), rgba(0, 0, 0, 0) 70%);
+  background: linear-gradient(180deg, rgb(0, 0, 25) 20%, #4e7599 50%, rgba(0, 0, 0, 0) 80%), linear-gradient(0deg, rgb(201, 130, 0) 1%, #be8386 10%, rgba(0, 0, 0, 0) 50%);
   background-repeat: no-repeat;
 }
 
@@ -55,9 +54,8 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 1;
-  padding: 0 10px;
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  padding: 0 1rem;
+  background-color: rgb(0, 0, 25);
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 }
 header nav {
@@ -86,26 +84,18 @@ main section {
 main section article {
   line-height: 2;
 }
-main section article span {
-  font-style: italic;
-  font-weight: 700;
-  background: linear-gradient(135deg, orange, red);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
 main .about {
   display: flex;
 }
 
 .preview {
   margin: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.1);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
   border-radius: 30px;
-  padding: 30px 5px;
+  padding: 30px 10px;
   display: flex;
 }
 .preview .preview-img {
@@ -137,18 +127,14 @@ footer nav ul li {
 @media (max-width: 576px) {
   header {
     flex-direction: column;
-    align-items: center;
-  }
-  header h1 {
-    display: none;
   }
   header nav ul {
     flex-direction: column;
   }
   header nav ul li {
-    margin: 10px 0;
+    margin: 1em 0;
   }
-  header #external-links {
+  header .external-links {
     display: none;
   }
   main {
@@ -164,14 +150,11 @@ footer nav ul li {
   }
 }
 @media (max-width: 768px) {
-  header {
-    align-items: center;
-  }
-  header h1 {
+  header .external-links {
     display: none;
   }
   main {
-    margin: 0;
+    margin: 0 5%;
     padding: 0;
   }
   section {
