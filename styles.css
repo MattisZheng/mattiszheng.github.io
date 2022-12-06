@@ -139,8 +139,10 @@ footer nav ul li {
     display: none;
   }
   main {
-    margin: 0;
-    padding: 0;
+    padding: 0 5%;
+  }
+  main .about {
+    flex-direction: column;
   }
   section {
     margin: 10vh 0;
@@ -153,10 +155,6 @@ footer nav ul li {
 @media (max-width: 768px) {
   header .external-links {
     display: none;
-  }
-  main {
-    margin: 0 5%;
-    padding: 0;
   }
   section {
     margin: 10vh 0;

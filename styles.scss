@@ -144,9 +144,12 @@ footer {
     }
   }
   main {
-    margin: 0;
-    padding: 0;
+    padding: 0 5%;
+    .about {
+      flex-direction: column;
+    }
   }
+
   section {
     margin: 10vh 0;
   }
@@ -162,10 +165,7 @@ footer {
       display: none;
     }
   }
-  main {
-    margin: 0 5%;
-    padding: 0;
-  }
+
   section {
     margin: 10vh 0;
   }
