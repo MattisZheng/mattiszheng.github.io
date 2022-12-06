@@ -51,6 +51,7 @@ body {
 header {
   position: sticky;
   top: 0;
+  transition: top 0.3s;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
